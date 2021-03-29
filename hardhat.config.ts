@@ -9,22 +9,9 @@ import { random } from "./src/utils";
 task("start", "").setAction(async () => {});
 
 const config: HardhatUserConfig = {
-  // solidity: {
-  //   compilers: [
-  //       {
-  //           version: "0.5.16",
-  //           settings: {
-  //           optimizer: {
-  //             enabled: true,
-  //             runs: 200,
-  //           }
-  //       }
-  //     },
-  //     {
-  //       version: "0.5.5"
-  // },
-  //   ]
-  // },
+  solidity: {
+    compilers: [{ version: "0.5.16" }],
+  },
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
